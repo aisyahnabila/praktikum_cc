@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Siakad</title>
+    <link href="../assets/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/custom-bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+    </div>
+    <div class="row g-0">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 sidebar">
+            <a href="dashboard.html" class="d-flex logo-side mb-3 align-items-center justify-content-center">
+                <img src="../assets/image/Stai putih 1.png" class="img-fluid me-2" width="55px" alt="" srcset="">
+                <div class="mt-2">
+                    <h3 class="text-white mb-0">Smart</h3>
+                    <h3 class="text-white">Siakad</h3>
+                </div>
+            </a>
+
+            <!-- Img profil -->
+            <div class="profile-avatar d-flex justify-content-center align-items-center mb-3">
+                <img src="../assets/image/avatar2.jpg" alt="Profile Image" class="rounded-circle profile-img img-fluid">
+            </div>
+
+            <p class="title-side">Profile</p>
+
+            <a href="#" class="active nav-link" data-bs-toggle="collapse" data-bs-target="#biodataDiri"
+                aria-expanded="false" aria-controls="biodataDiri">
+                <i class="me-2"></i> <i class="bi bi-person-circle me-2"></i> Biodata Diri
+            </a>
+            <div class="collapse" id="biodataDiri">
+                <a href="#" class="bi bi-chevron-right ms-3 nav-link"> <i class="bi bi-key me-2"></i> Ubah Password</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10 main-content ">
+
+            <!-- Header -->
+            <navbar class="d-flex navbar justify-content-between py-1 px-4 align-items-center bg-white mb-4">
+                <div class="d-flex align-items-center">
+                    <a href="index.html" class="btn menu-icon text-primary"><i class="bi bi-grid-fill"></i> </a>
+                    <div>
+                        <h5 class="text-primary mt-1" style="font-weight: bold;">PROFILE </h5>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="search-container me-4">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" class="form-control search-input" placeholder="Search" aria-label="Search"
+                            aria-describedby="addon-wrapping">
+                        <span class="search-shortcut">⌘ /</span>
+                    </div>
+                    <button class="btn-nav me-4" type="button">
+                        <i class="bi bi-brightness-high"></i>
+                    </button>
+                    <button class="btn-nav me-4" type="button">
+                        <i class="bi bi-clock-history"></i>
+                    </button>
+                    <button class="btn-nav me-4" type="button">
+                        <i class="bi bi-bell"></i>
+                    </button>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle  btn-profile" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../assets/image/avatar.png" alt="Profile" class="rounded-circle" width="40">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-start">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </navbar>
+
+            <div class="container px-4">
+                <p>/ Biodata Diri</p>
+                <p>Biodata Diri Mahasiswa</p>
+
+                <!-- Column Data Perkuliahan Mahasiswa Start -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-primary-white p-3 mb-4">
+                            <!-- Title and Button Edit Biodata -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="text-gray fs-3 fw-bold font-family-Inter m-0">Data Perkuliahan</p>
+                                <button class="btn btn-primary d-flex align-items-center">Edit Biodata
+                                    <i class="bi bi-pencil-square ms-2"></i>
+                                </button>
+                            </div>
+                            <!-- Title and Button Edit Biodata End -->
+
+                            <!-- Horizontal Line -->
+                            <div class="horizontal-line"></div>
+                            <!-- Horizontal Line End -->
+
+                            <div id="component" class="container-fluid">
+                                <div
+                                    class="student-info-card p-1 bg-white rounded-2 d-flex justify-content-between flex-wrap">
+                                    <!-- Left group -->
+                                    <div class="left-group d-flex flex-column">
+                                        <!-- NIM -->
+                                        <div class="d-flex align-items-center">
+                                            <p class="label text-secondary fs-6 fw-normal m-0">NIM</p>
+                                            <p class="value text-gray fs-6 fw-bold m-0">: 1204210000</p>
+                                        </div>
+                                        <!-- Kelas -->
+                                        <div class="d-flex align-items-center">
+                                            <p class="label text-secondary fs-6 fw-normal m-0">Kelas</p>
+                                            <p class="value text-gray fs-6 fw-bold m-0">: SI 03-04</p>
+                                        </div>
+                                        <!-- Dosen Wali -->
+                                        <div class="d-flex align-items-center">
+                                            <p class="label text-secondary fs-6 fw-normal m-0">Dosen Wali</p>
+                                            <p class="value text-gray fs-6 fw-bold m-0">: Yupit Sudianto, S.Kom., M.Kom.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right group -->
+                                    <div class="right-group d-flex flex-column">
+                                        <!-- Program Studi -->
+                                        <div class="d-flex align-items-center">
+                                            <p class="label text-secondary fs-6 fw-normal m-0">Program Studi</p>
+                                            <p class="value text-gray fs-6 fw-bold m-0">: Sistem Informasi</p>
+                                        </div>
+                                        <!-- Tahun Angkatan -->
+                                        <div class="d-flex align-items-center">
+                                            <p class="label text-secondary fs-6 fw-normal m-0">Tahun Angkatan</p>
+                                            <p class="value text-gray fs-6 fw-bold m-0">: 2020</p>
+                                        </div>
+                                        <!-- Status Mahasiswa -->
+                                        <div class="d-flex align-items-center">
+                                            <p class="label text-secondary fs-6 fw-normal m-0">Status Mahasiswa</p>
+                                            <p class="value text-gray fs-6 fw-bold m-0">: Aktif</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column Data Perkuliahan Mahasiswa End -->
+
+
+                <!-- Column Data Diri Mahasiswa Start -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-primary-white p-3 mb-3">
+                            <!-- Title and Button Edit Biodata -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="text-gray fs-3 fw-bold font-family-Inter m-0">Data Diri</p>
+                            </div>
+                            <!-- Title and Button Edit Biodata End -->
+
+                            <!-- Horizontal Line -->
+                            <div class="horizontal-line mb-1"></div>
+                            <!-- Horizontal Line End -->
+
+                            <div id="component" class="container-fluid">
+                                <div class="row">
+                                    <!-- Left Section -->
+                                    <div class="col-md-6">
+                                        <div class="student-info-card p-1 bg-white rounded-2 d-flex flex-column">
+                                            <!-- Nama -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Nama</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Irsyad Ramadhani
+                                                    Soetedjo</p>
+                                            </div>
+                                            <!-- Tempat Lahir -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Tempat Lahir</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Surabaya</p>
+                                            </div>
+                                            <!-- Tanggal Lahir -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Tanggal Lahir</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 01 Januari 2000</p>
+                                            </div>
+                                            <!-- Alamat -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Alamat</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Jl. Ketintang no. 187
+                                                    Surabaya, Jawa Timur, Indonesia</p>
+                                            </div>
+                                            <!-- Jenis Kelamin -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Jenis Kelamin</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Laki-Laki</p>
+                                            </div>
+                                            <!-- Kebutuhan Khusus -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Kebutuhan Khusus</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: -</p>
+                                            </div>
+                                            <!-- Agama -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Agama</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Islam</p>
+                                            </div>
+                                            <!-- Kewarganegaraan -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Kewarganegaraan</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Indonesia</p>
+                                            </div>
+                                            <!-- Email Kampus -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Email Kampus</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">:
+                                                    irsyad@telkomuniversity.ac.id</p>
+                                            </div>
+                                            <!-- Email Pribadi -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Email Pribadi</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: irsyad@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Section -->
+                                    <div class="col-md-6">
+                                        <div class="student-info-card p-1 bg-white rounded-2 d-flex flex-column">
+                                            <!-- Provinsi -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Provinsi</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Jawa Timur</p>
+                                            </div>
+                                            <!-- Kota -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Kota</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Surabaya</p>
+                                            </div>
+                                            <!-- Kecamatan -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Kecamatan</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Wiyung</p>
+                                            </div>
+                                            <!-- Kode Pos -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Kode Pos</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 73467</p>
+                                            </div>
+                                            <!-- No Telp -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">No Telp</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 0821 0000 0000</p>
+                                            </div>
+                                            <!-- Kartu Tanda Penduduk -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Kartu Tanda Penduduk
+                                                </p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: ktp_irsyad.jpeg</p>
+                                            </div>
+                                            <!-- Ijazah Sekolah Menengah Atas -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Ijazah Sekolah
+                                                    Menengah Atas</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: ijazah_irsyad.pdf</p>
+                                            </div>
+                                            <!-- Akte Kelahiran -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Akte Kelahiran</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 01 Januari 2000</p>
+                                            </div>
+                                            <!-- Kartu Keluarga -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Kartu Keluarga</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 01 Januari 2000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column Data Diri Mahasiswa End -->
+
+                <!-- Column Data Data Orang Tua / Wali Start -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bg-primary-white p-3 mb-4">
+                            <!-- Title and Button Edit Biodata -->
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="text-gray fs-3 fw-bold font-family-Inter m-0">Data Orang Tua / Wali</p>
+                            </div>
+                            <!-- Title and Button Edit Biodata End -->
+
+                            <!-- Horizontal Line -->
+                            <div class="horizontal-line"></div>
+                            <!-- Horizontal Line End -->
+
+                            <div id="component" class="container-fluid">
+                                <div class="row">
+                                    <!-- Left Section -->
+                                    <div class="col-md-4">
+                                        <div class="student-info-card p-1 bg-white rounded-2 d-flex flex-column">
+                                            <!-- Nama Ayah-->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Nama Ayah</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Irsyad</p>
+                                            </div>
+                                            <!-- NIK -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">NIK</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 00000</p>
+                                            </div>
+                                            <!-- Pekerjaan -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Pekerjaan</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Pegawai Swasta</p>
+                                            </div>
+                                            <!-- Alamat -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">No Telepon</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 0821 0000 0000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Section -->
+                                    <div class="col-md-4">
+                                        <div class="student-info-card p-1 bg-white rounded-2 d-flex flex-column">
+                                            <!-- Nama Ibu -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Nama Ibu</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Siti</p>
+                                            </div>
+                                            <!-- NIK -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">NIK</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 0000</p>
+                                            </div>
+                                            <!-- Pekerjaan -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Pekerjaan</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: Pegawai Swasta</p>
+                                            </div>
+                                            <!-- No Telepon -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">No Telepon</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: 0821 0000 0000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Middle Section End -->
+
+                                    <!-- Right Section -->
+                                    <div class="col-md-4">
+                                        <div class="student-info-card p-1 bg-white rounded-2 d-flex flex-column">
+                                            <!-- Nama Wali -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Nama Wali</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: -</p>
+                                            </div>
+                                            <!-- NIK -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">NIK</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: -</p>
+                                            </div>
+                                            <!-- Pekerjaan -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">Pekerjaan</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: -</p>
+                                            </div>
+                                            <!-- No Telepon -->
+                                            <div class="d-flex align-items-center mb-1">
+                                                <p class="text-secondary fs-6 fw-normal col-4 m-0">No Telepon</p>
+                                                <p class="text-secondary fs-6 fw-bold col-8 m-0">: -</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Right Section End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column Data Orang Tua / Wali End -->
+            </div>
+        </div>
+    </div>
+
+    </main>
+    </div>
+
+    <script src="../assets/bootstrap/bootstrap.js"></script>
+</body>
+<script>
+    document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function (element) {
+        let target = document.querySelector(element.getAttribute('data-bs-target'));
+        let icon = element.querySelector('.toggle-icon');
+
+        // Event listener for collapse open and close
+        target.addEventListener('shown.bs.collapse', function () {
+            icon.classList.remove('bi-chevron-right');
+            icon.classList.add('bi-chevron-down');
+        });
+
+        target.addEventListener('hidden.bs.collapse', function () {
+            icon.classList.remove('bi-chevron-down');
+            icon.classList.add('bi-chevron-right');
+        });
+    });
+</script>
+
+</html>

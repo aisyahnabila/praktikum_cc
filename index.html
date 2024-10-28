@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard|Mahasiswa</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
+    <!-- Custom Bootstrap CSS should come after default Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/custom-bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom d-flex justify-content-between align-items-center px-5">
+        <div class="d-flex align-items-center">
+            <img src="../assets/image/logo.png" alt="Logo">
+            <div class="form-group">
+                <label for="">Sim Akademik</label>
+                <h1>STAI Ali Bin Abi Thalib</h2>
+            </div>
+
+        </div>
+        <div class="user-profile">
+            <div class="nav-item dropdown">
+                <button class="dropdown-toggle  btn-profile" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="../assets/image/avatar.png" alt="Profile" class="rounded-circle" width="40">
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-start">
+                    <li><a class="dropdown-item" href="../students/profile.html">Akun Profile</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content bg-white py-5">
+        <!-- Welcome Message -->
+        <div class="container text-center welcome-text text-gray pb-5">
+            <h2>Ahlan Wa Sahlan, Irsyad ! 👋</h2>
+            <p>Silahkan memilih modul yang ingin digunakan</p>
+        </div>
+
+        <!-- Navigation Tabs -->
+
+        <div class="container">
+            <div class="container module-selection">
+                <ul class="nav nav-tabs" id="tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Semua</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-target="akademik">Akademik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="kepegawaian">Akun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="penelitian">TAK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="pengmas">Perwalian</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main content that will be dynamically replaced -->
+            <div class="main-content" id="main-content">
+                <!-- Akademik Content (initially displayed) -->
+                <div class="container mt-4 akademik-content">
+                    <div class="d-flex justify-content-between">
+                        <h3>Akademik</h3>
+                        <div class="search-container">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" class="form-control search-input" placeholder="Search"
+                                aria-label="Search" aria-describedby="addon-wrapping">
+                            <span class="search-shortcut">⌘ /</span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <!-- Card 1: Perwalian -->
+                        <div class="col-md-4 text-center">
+                            <a href="dashboard.html" class="card py-5 rounded-4 text-decoration-none">
+                                <div class="card-body">
+                                    <img src="../assets/image/perwalian-mhs.png" class="mb-2 small-img"
+                                        alt="logo_perwalian">
+                                    <h5 class="card-title judul">Perwalian</h5>
+                                    <p class="card-text teks">Rekapitulasi presensi kehadiran mahasiswa di setiap mata
+                                        kuliah yang ditempuh.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Card 2: Perkuliahan -->
+                        <div class="col-md-4 text-center">
+                            <a href="dashboard.html" class="card py-5 rounded-4 text-decoration-none">
+                                <div class="card-body">
+                                    <img src="../assets/image/perkuliahan-mhs.png" class="mb-2 small-img"
+                                        alt="logo_perkuliahan">
+                                    <h5 class="card-title judul">Perkuliahan</h5>
+                                    <p class="card-text teks">Perkuliahan mencakup semua aktivitas akademik yang
+                                        berlangsung selama semester</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Card 3: Kuesioner -->
+                        <div class="col-md-4 text-center">
+                            <a href="dashboard.html" class="card py-5 rounded-4 text-decoration-none">
+                                <div class="card-body">
+                                    <img src="../assets/image/kuesioner.png" class="mb-2 small-img"
+                                        alt="logo_kuesioner">
+                                    <h5 class="card-title judul">Kuesioner</h5>
+                                    <p class="card-text teks">Perkuliahan mencakup semua aktivitas akademik yang
+                                        berlangsung selama semester</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-primary d-flex align-items-center justify-content-center ">
+        <p>&copy; 2023 STAI Ali Bin Abi Thalib Surabaya - All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/bootstrap/bootstrap.js"></script>
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all tab links
+            const tabs = document.querySelectorAll('.nav-link');
+            const mainContent = document.getElementById('main-content');
+
+            // Define the content for each tab
+            const content = {
+                akademik: `
+        <div class="container mt-4">
+            <div class="d-flex justify-content-between">
+                <h3>Akademik</h3>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="form-control search-input" placeholder="Search"
+                        aria-label="Search" aria-describedby="addon-wrapping">
+                    <span class="search-shortcut">⌘ /</span>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 text-center">
+                      <a href="dashboard.html" class="card py-5 rounded-4 text-decoration-none">
+                                <div class="card-body">
+                                    <img src="../assets/image/perkuliahan.png" class="mb-2" alt="">
+                                    <h5 class="card-title judul">Perkuliahan</h5>
+                                    <p class="card-text teks">Rekapitulasi presensi kehadiran pengajar di setiap mata
+                                        kuliah yang diajar</p>
+                                </div>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                     <a href="dashboard.html" class="card py-5 rounded-4 text-decoration-none">
+                                <div class="card-body">
+                                    <img src="../assets/image/perwalian.png" class="mb-2" alt="">
+                                    <h5 class="card-title judul">Perwalian</h5>
+                                    <p class="card-text teks">Bimbingan Akademik terhadap mahasiswa dalam
+                                        proses rencana studi mahasiswa</p>
+                                </div>
+                            </a>
+                </div>
+            </div>
+        </div>
+    `,
+                kepegawaian: `
+        <div class="container mt-4">
+            <div class="d-flex justify-content-between">
+                <h3>Kepegawaian</h3>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="form-control search-input" placeholder="Search"
+                        aria-label="Search" aria-describedby="addon-wrapping">
+                    <span class="search-shortcut">⌘ /</span>
+                </div>
+            </div>
+            <p>Kepegawaian content goes here...</p>
+        </div>
+    `,
+                penelitian: `
+        <div class="container mt-4">
+            <div class="d-flex justify-content-between">
+                <h3>Penelitian</h3>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="form-control search-input" placeholder="Search"
+                        aria-label="Search" aria-describedby="addon-wrapping">
+                    <span class="search-shortcut">⌘ /</span>
+                </div>
+            </div>
+            <p>Penelitian content goes here...</p>
+        </div>
+    `,
+                pengmas: `
+        <div class="container mt-4">
+            <div class="d-flex justify-content-between">
+                <h3>Pengmas</h3>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="form-control search-input" placeholder="Search"
+                        aria-label="Search" aria-describedby="addon-wrapping">
+                    <span class="search-shortcut">⌘ /</span>
+                </div>
+            </div>
+            <p>Pengmas content goes here...</p>
+        </div>
+    `
+            };
+            // Add click event listeners to all tabs
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+
+                    // Get the target content based on the clicked tab's data-target
+                    const target = tab.getAttribute('data-target');
+
+                    // Replace main content with the corresponding content
+                    mainContent.innerHTML = content[target];
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
